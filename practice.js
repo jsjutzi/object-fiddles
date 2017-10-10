@@ -8,7 +8,10 @@
 
   //Code here
 
-
+const me = {
+  name: "Jack",
+  age: 30
+}
 
 
 
@@ -22,7 +25,14 @@
 
   //Code here
 
-
+const favoriteThings = {
+band: "Papa Roach",
+food: "Spaghetti",
+person: "Denzel Washington",
+book: "Monster Hunter International",
+movie: "John Wick",
+holiday: "New Years"
+}
 
 
 
@@ -32,7 +42,8 @@
 
   //Code here
 
-
+favoriteThings.car = "Audi A4";
+favoriteThings.brand = "Samsung";
 
 
 
@@ -40,7 +51,8 @@
 
   //Code here
 
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 
@@ -59,6 +71,14 @@ that is named color, with the value being the color of your backpack.
 */
 
   //Code here
+const backPack = {
+
+}
+var item = "firstPocket";
+
+backPack[item] = "chapstick";
+backPack.color = "black";
+
 
 
 
@@ -68,7 +88,7 @@ that is named color, with the value being the color of your backpack.
 //After you do the above, alert your entire backPack object.
 
   //Code here
-
+  alert(backPack);
  
 
 /*
@@ -78,7 +98,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
   //Code here
-
+console.log(backPack);
 
 
 
@@ -101,7 +121,8 @@ var user2 = {
 
   //Code Here
 
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
 
 
@@ -123,7 +144,10 @@ var user2 = {
 
   //Code Here
 
+const methodCollection = {
 
+
+};
 
 
 /*
@@ -133,7 +157,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
  */
 
   //Code Here
+methodCollection.alertHello = function(){
+    alert("hello");
+}
+methodCollection.logHello = function(){
+    console.log("hello");
 
+}
 
 
 
@@ -142,7 +172,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+methodCollection.alertHello;
+methodCollection.logHello;
 
 
 
@@ -157,8 +188,15 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // parameters and returns a new object with all of the information that you passed in.
 
   //Code Here
-
-
+//Have to use parameters as values for key value pairs.
+const makePerson = function(name, birthday, ssn){
+        const person = {
+          name: name,
+          birthday: birthday,
+          ssn: ssn
+        }
+        return person;
+}
 
 
 
@@ -173,4 +211,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
+const makeCard = function(cardNumber, expirationDate, securityCode){
+      const CreditCard = {
+        cardNumber: cardNumber,
+        expirationDate: expirationDate,
+        securityCode: securityCode
+      }
+      return CreditCard;
 
+
+}
